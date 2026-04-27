@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=DM+Sans:wght@400;500&display=swap');
+
+
+:root {
+  --nav-bg: #1a1a2e;
+  --nav-text: #c8c8e8;
+  --nav-hover-bg: #2a2a4e;
+  --nav-active-bg: #e94560;
+  --nav-active-text: #ffffff;
+  --logo-color: #ffffff;
+  --body-bg: #f0f0f8;
+  --content-text: #1a1a2e;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--body-bg);
+  color: var(--content-text);
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--nav-bg);
+  padding: 0 40px;
+  height: 64px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--logo-color);
+  letter-spacing: 0.04em;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+}
+
+
+.nav-links li a {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--nav-text);
+  padding: 8px 20px;
+  border-radius: 6px;
+  letter-spacing: 0.03em;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+
+.nav-links li a:hover {
+  background-color: var(--nav-hover-bg);
+  color: #ffffff;
+}
+
+.nav-links li a.active {
+  background-color: var(--nav-active-bg);   /* Red highlight for current page */
+  color: var(--nav-active-text);
+  font-weight: 600;
+}
+
+
+.content {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.content h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 2rem;
+  color: var(--content-text);
+  margin-bottom: 16px;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444466;
+  margin-bottom: 12px;
+}
+
+.content code {
+  background: #ddddf5;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #e94560;
+}
